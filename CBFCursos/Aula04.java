@@ -1,5 +1,4 @@
 
-
 package CBFCursos;
 
     import java.util.*;
@@ -9,7 +8,7 @@ public class Aula04 {
     public static void main(String[] args) {
         Scanner scan =  new Scanner(System.in);
 
-        float n1 , n2 , n3 , resp;
+        float n1 , n2 , n3 ;
         String nome;
         float media;
         System.out.println("Digite seu nome");
@@ -19,7 +18,6 @@ public class Aula04 {
         n2 = scan.nextFloat();
         n3 = scan.nextFloat();
         media = (n1+n2+n3)/3;
-        resp = n1 + n2;
         System.out.printf(" O nome foi %s\n",nome);
         System.out.printf(" A media do aluno foi %.2f",media);
     }
