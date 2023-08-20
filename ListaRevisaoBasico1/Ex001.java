@@ -10,6 +10,7 @@ public class Ex001 {
         n2 = scan.nextInt();
         soma = n1 + n2;
         System.out.printf(" A soma de %d + %d = %d",n1 , n2 , soma);
+        scan.close();
 
     }
 }

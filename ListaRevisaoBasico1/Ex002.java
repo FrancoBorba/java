@@ -13,6 +13,7 @@ public class Ex002 {
         n3 = scan.nextFloat();
         media = (n1+n2+n3)/3;
         System.out.printf(" A media de %.2f , %.2f , %.2f eh = %.2f",n1 , n2 ,n3 , media);
+        scan.close();
 
     }
 }

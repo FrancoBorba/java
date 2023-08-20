@@ -8,5 +8,6 @@ public class Ex003 {
         temperatura = scan.nextFloat();
         conversor = (temperatura *9/5) + 32;
         System.out.printf("  A temperatura em farenhaits eh %.3f",conversor);
+        scan.close();
     }
 }
