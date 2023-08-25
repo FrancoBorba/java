@@ -13,6 +13,6 @@ public class Aula06 {
         for(int i = 0 ; i < 5 ; i++){
             System.out.printf("%d \n",num[i]);
         }// imprimir array
-         
+         scan.close();
     }
 }
