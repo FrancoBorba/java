@@ -20,5 +20,6 @@ public class Aula04 {
         media = (n1+n2+n3)/3;
         System.out.printf(" O nome foi %s\n",nome);
         System.out.printf(" A media do aluno foi %.2f",media);
+        scan.close();
     }
 }

@@ -30,6 +30,6 @@ public class Aula05 {
             
 
         }while(contador < max);
-        
+            scan.close();
     }
 }
