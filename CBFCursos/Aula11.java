@@ -7,17 +7,23 @@ import CBFCursos.Classes.Jogador;
 public class Aula11 {
    
     public static void main(String[] args) {
-            int num = 0;
+            int num = 1;
             Jogador j1 = new Jogador(num++); // pos incremento , para  criar uma sequencia
             Jogador j2 = new Jogador(num++);
             Jogador j3 = new Jogador(num++);
+
+            Jogador.alerta=true;
+
+            j1.info();
+            j2.info();
+            j3.info();
 
             /*
             Jogador j1 = new Jogador(++num); // pre incremento , para  criar uma sequencia
             Jogador j2 = new Jogador(++num);
             Jogador j3 = new Jogador(++num);
             */ 
-            System.out.printf("Vidas do jogador  %d",j1.getVidas());
+            //System.out.printf("Vidas do jogador  %d",j1.getVidas());
 
 
         //j1.num=10;  // O num está sendo acessado de fora da classe
