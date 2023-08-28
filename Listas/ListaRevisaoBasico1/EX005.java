@@ -1,4 +1,4 @@
-package ListaRevisaoBasico1;
+package Listas.ListaRevisaoBasico1;
     import java.util.Scanner;
 public class EX005 {
     public static void main(String[] args) {

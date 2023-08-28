@@ -7,13 +7,13 @@ import CBFCursos.Classes.Jogador;
 public class Aula11 {
    
     public static void main(String[] args) {
-            int num = 1;
+            int num = 1; 
             Jogador j1 = new Jogador(num++); // pos incremento , para  criar uma sequencia
             Jogador j2 = new Jogador(num++);
             Jogador j3 = new Jogador(num++);
 
             Jogador.alerta=true;
-
+           
             j1.info();
             j2.info();
             j3.info();
