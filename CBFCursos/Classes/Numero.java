@@ -1,5 +1,5 @@
 package CBFCursos.Classes;
-
+    // tentei criar metodos para a "calculadora " , porém não sei se é o jeito certo de se fazer , utilizei para praticar
 public class Numero {
     private int valor;
     private int resultado;
