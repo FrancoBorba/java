@@ -13,6 +13,7 @@ public class Vegetal {
     public void setVivo(Boolean vivo){
         this.vivo = vivo;
     }
+    
     public Boolean getVivo(){
         return this.vivo;
     }

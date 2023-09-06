@@ -10,6 +10,7 @@ public class Ex004 {
     desconto = scan.nextFloat();
     resultado = produto * (desconto/100);
     System.out.printf(" O valor do produto após o desconto eh %.2f",(produto -resultado));
+    scan.close();
 
    }
 }

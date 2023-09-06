@@ -10,5 +10,6 @@ public class Ex008 {
         valorHora = scan.nextFloat();
         valorBruto = horasTrabalhadas * valorHora;
         System.out.printf(" O salario bruto eh de %.2f",valorBruto);
+        scan.close();
     }
 }

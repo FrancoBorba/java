@@ -10,5 +10,6 @@ public class Ex010 {
     tempo = scan.nextFloat();
     velocidade = distancia/tempo;
     System.out.printf(" A velocidade media foi de %.2f",velocidade);
+    scan.close();
     }
 }

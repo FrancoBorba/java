@@ -1,5 +1,5 @@
  package CBFCursos.Classes;
-// a clase animal vai inplementar a classe SerVivo
+// a clase animal vai implementar a classe SerVivo
 // a classe animal é abstrata( aula 19 - classes abstratas)
 abstract class Animal implements SerVivo{
 
@@ -56,6 +56,7 @@ abstract class Animal implements SerVivo{
             System.out.println("-----------------------------------");
         }
     }
+   
 
     public void mover(){
         if(this.vivo){
@@ -71,7 +72,7 @@ abstract class Animal implements SerVivo{
     }
 
 
-    public void comer(int massa){
+     public void comer(int massa){
         if(this.vivo){
             this.forca += massa;
         }

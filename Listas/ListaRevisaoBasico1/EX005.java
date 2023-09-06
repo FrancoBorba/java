@@ -13,5 +13,6 @@ public class EX005 {
         altura = scan.nextFloat();
         imc = peso/(altura*altura);
         System.out.printf(" %s seu imc eh = %.3f",nome, imc);
+        scan.close();
     }
 }

@@ -9,11 +9,12 @@ public class Ex009 {
         int i;
         System.out.println("Digite uma palavra ou frase");
         letra = scan.nextLine();
+        scan.close();
         for(  i = 0 ; i < letra.length(); i++){
-
+            
         }
         System.out.printf("Total de caracteres %d", i);
-        scan.close();
+        
     }
     
 }

@@ -9,5 +9,6 @@ public class Ex006 {
         centrimetros = metros * 100;
         milimetros = centrimetros * 10;
         System.out.printf("Resultado em centimetros = %.2f \n Resultado em milimetros = %.2f ",centrimetros , milimetros);
+        scan.close();
     }
 }

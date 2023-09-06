@@ -10,6 +10,7 @@ public class Ex009 {
         taxa = scan.nextFloat();
         result = dolar*taxa;
         System.out.printf("O valor recebido da nova moeda eh %.3f",result);
+        scan.close();
     }
     
 }

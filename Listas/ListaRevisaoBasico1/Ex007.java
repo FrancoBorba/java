@@ -10,6 +10,7 @@ public class Ex007 {
     velocidade = scan.nextFloat();
     media = distancia/velocidade;
     System.out.printf(" O tempos estimado eh de %.2f",media);
+    scan.close();
    }
     
 }

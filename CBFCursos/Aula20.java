@@ -9,7 +9,7 @@ import CBFCursos.Classes.Vegetal;
 public class Aula20 {
     public static void main(String[] args) {
 
-
+        int x;
         Sapo a1 = new Sapo(12, 5, 8); 
         Aranha a2 = new Aranha(6, 2, 4, 5);
         Formiga a3 = new Formiga(3, 1, 1);
@@ -18,12 +18,15 @@ public class Aula20 {
         Vegetal v3 = new Vegetal(8); 
 
 
+        
         a1.info();
         a2.info();
         a3.info();
        
 
         a2.atacar(a1);
+        
+       
         a1.info();
         a2.info();
         a3.info();
