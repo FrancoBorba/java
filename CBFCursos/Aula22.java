@@ -3,13 +3,13 @@ package CBFCursos;
 import java.util.Scanner;
 
 // switch case em java ( igual c++ , já havia utilizado em exemplos anteriores);
-public class Aula21 {
+public class Aula22 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int dia;
         System.out.println("Digite um numero entre 1 e 7");
         dia = scan.nextInt();
-
+        scan.close();
         switch(dia){
             case 1:{
                 System.out.println("Segunda feira");
@@ -42,7 +42,8 @@ public class Aula21 {
             default :{
                 System.out.println("Numero invalido");
             }
+           
         }
-        
+         
     }
 }
