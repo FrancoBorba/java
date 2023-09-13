@@ -1,5 +1,5 @@
 package CBFCursos;
-
+// aula de strings
 public class Aula39 {
     public static void main(String[] args) {
         char texto_c[] = {'f','r','a','n','c','o',' ','b','o','r','b','a'}; // um vetor de char é uma string
@@ -8,14 +8,14 @@ public class Aula39 {
         String s1 = new String(); // string vazia
         String s2 = new String(texto_s);
         String s3 = new String(texto_c); // uma string pode receber um array de char pois " são a mesma coisa"
-        String s4 = new String(texto_c,0,6);
+        String s4 = new String(texto_c,0,6); // recebe a parte delimitada da string
 
         System.out.println(s3);
         System.out.println(s4);
          
         int tam = texto_s.length(); // retorna a posição
         System.out.println("O tamanho da string: " + tam);
-        char c = texto_s.charAt(2); // retorna a letra(char) da pposição indicada
+        char c = texto_s.charAt(2); // retorna a letra(char) da posição indicada
         System.out.println("A letra da posição 3: "+ c);
     }
 }
