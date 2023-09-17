@@ -12,7 +12,7 @@ public class Aula40 {
             System.out.println("String 1 igual a 2");
         }
 
-        if(s3.equalsIgnoreCase(s4)){ // não faz a diferen;a entra maiuscula e minuscula
+        if(s3.equalsIgnoreCase(s4)){ // não faz a diferenca entra maiuscula e minuscula
             System.out.println("String 3 igual a 4");
         }
             else{
