@@ -1,7 +1,7 @@
 package CBFCursos;
 // funcções lambdas
 import java.util.ArrayList;
-import java.util.function.Consumer;
+//import java.util.function.Consumer;
 public class Aula51 {
     public static void main(String[] args) {
         // funcao lambda = ()- >{}
