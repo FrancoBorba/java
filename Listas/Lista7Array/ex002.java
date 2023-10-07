@@ -1,5 +1,8 @@
 package Listas.Lista7Array;
-import java.security.SecureRandom;;
+import java.security.SecureRandom;
+//Maior Elemento
+//Desenvolva uma função que encontre o maior elemento em um array de doubles
+
 public class ex002 {
     public static void main(String[] args) {
         final int tam = 10;
