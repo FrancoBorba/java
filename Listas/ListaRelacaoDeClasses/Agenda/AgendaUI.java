@@ -12,6 +12,7 @@ public class AgendaUI {
 	
      public void exibirMenu()
 	{
+		do {
 		System.out.println("1 - Incluir contato");
 		System.out.println("2 - Excluir contato");
 		System.out.println("3 - Pesquisar contato");
@@ -21,12 +22,29 @@ public class AgendaUI {
 		int opcao = entrada.nextInt();
 		if (opcao == 1)
 			telaIncluirContato();
+		if(opcao == 2){
+			System.out.println("Digite o cpf do contato que sera removido");
+			String cpf;
+			cpf = entrada.next();
+			telaExcluirContato(cpf);
+		}
+		if(opcao == 3){
+			System.out.println("Digite o cpf que deseja procurar");
+			String cpf;
+			cpf = entrada.next();
+			telaPesquisarContato(cpf);
+		}
+		if(opcao == 4)
+			telaListarContatos();
+			
 		if (opcao == 5)
 		{
 			entrada.close();
 			System.exit(0);
 			
 		}
+		}while(true);
+		
 	}
     public void telaIncluirContato() {
         Scanner entrada = new Scanner(System.in);
@@ -48,4 +66,22 @@ public class AgendaUI {
             System.out.println("\nErro ao adicinar contato, já existe um contato com esse cpf, voltando ao menu...");
         }
     }
+	public void telaExcluirContato(String cpf){
+		System.out.println("Contato removido " + agenda.pesquisarContato(cpf));
+		agenda.contatos.remove(agenda.pesquisarContato(cpf));
+	}
+	public void telaPesquisarContato(String cpf){
+		
+		System.out.println(agenda.pesquisarContato(cpf));
+	}
+	public void telaListarContatos(){
+
+		if(agenda.listarContatos().isEmpty()){
+			System.out.println("Agenda vazia");
+		} else{
+			for(Contato c : agenda.listarContatos()){
+				System.out.println(c);
+			}
+		}
+	}
 }	
