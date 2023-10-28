@@ -10,7 +10,7 @@ public class AgendaUI {
 		agenda = new Agenda();
 	}
 	
-    /* public void exibirMenu()
+     public void exibirMenu()
 	{
 		System.out.println("1 - Incluir contato");
 		System.out.println("2 - Excluir contato");
@@ -29,9 +29,23 @@ public class AgendaUI {
 		}
 	}
     public void telaIncluirContato() {
-    	System.out.println("Digite o cpf:");
-    	String cpf = 
+        Scanner entrada = new Scanner(System.in);
+    
+    	System.out.print("\nDigite o cpf: ");
+        String cpf = entrada.next();
+    	System.out.print("Digite o nome: ");
+        String nome = entrada.next();
+    	System.out.print("Digite o telefone: ");
+        String telefone = entrada.next();
+    	System.out.print("Digite o email: ");
+        String email = entrada.next();
+
+
     	Contato c = new Contato(cpf,nome,telefone,email);
-    	agenda.incluirContato(c);
+        if(agenda.incluirContato(c)){
+            System.out.println("\nContato adicionado com sucesso, voltando ao menu...");
+        }else{
+            System.out.println("\nErro ao adicinar contato, já existe um contato com esse cpf, voltando ao menu...");
+        }
     }
-}*/	
+}	
