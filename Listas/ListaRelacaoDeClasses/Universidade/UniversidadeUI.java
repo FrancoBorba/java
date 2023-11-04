@@ -53,7 +53,7 @@ public class UniversidadeUI {
             System.out.println("Digite o nome do departamento");
             String nome = scan.next();
             Departamento d1 = new Departamento(nome, id); 
-            scan.close();      
+            // Não pode ter um scan.close() aq pq da erro     
 
             if(universidade.criarDepartamento(d1)){
               System.out.println("Departamento criado");
@@ -68,6 +68,6 @@ public class UniversidadeUI {
         universidade.excluirDepartamento(id);
     }
     public void telaListarDepartamentos(){
-       universidade.listarDepartamentos();
+       System.out.println(universidade.listarDepartamentos());
     }
 }

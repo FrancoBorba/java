@@ -69,7 +69,7 @@ public class DepartamentoUI {
                 System.out.println("Digite o departamento");
                 String departamento = scan.nextLine();
                 Professor p = new Professor(cpf,nome,materia,departamento);
-                scan.close();
+                scan.close(); // pq esse scan não da erro?
                 
                if(this.departamento.addProfessor(p)){
                 System.out.println("\nProfessor adicionado");
