@@ -7,7 +7,7 @@ public class UniversidadeUI {
         universidade = new Universidade();
     }
     public void exibirMenu(){
-        Scanner scan = new Scanner(System.in);
+        
 
         do{
          
@@ -15,8 +15,8 @@ public class UniversidadeUI {
         System.out.println("2-Excluir departamento");
         System.out.println("3-Listar departamentos");
         System.out.println("4- Sair do menu");
+        Scanner scan = new Scanner(System.in);
         int opcao = scan.nextInt();
-
 
             switch (opcao) {
                 case 1:{
@@ -43,8 +43,6 @@ public class UniversidadeUI {
                     break;
             }
 
-
-
         }while(true);
 
     }
@@ -55,15 +53,14 @@ public class UniversidadeUI {
             System.out.println("Digite o nome do departamento");
             String nome = scan.next();
             Departamento d1 = new Departamento(nome, id); 
-            universidade.departamentos.add(d1);
-            scan.close();
+            scan.close();      
 
-            //if(universidade.criarDepartamento(d1)){
-             //   System.out.println("Departamento criado");
-           // }
-           // else{
-           //     System.out.println("Departamento já existia");
-            //}
+            if(universidade.criarDepartamento(d1)){
+              System.out.println("Departamento criado");
+            }
+            else{
+              System.out.println("Departamento já existia");
+            }
 
         }
     public void telaExcluirDepartamento(String id){
