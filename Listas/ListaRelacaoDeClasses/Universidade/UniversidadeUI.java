@@ -14,7 +14,8 @@ public class UniversidadeUI {
         System.out.println("1-Criar departamento");
         System.out.println("2-Excluir departamento");
         System.out.println("3-Listar departamentos");
-        System.out.println("4- Sair do menu");
+        System.out.println("4- Acessar Departamentos");
+        System.out.println("5- Sair do menu");
         Scanner scan = new Scanner(System.in);
         int opcao = scan.nextInt();
 
@@ -36,6 +37,9 @@ public class UniversidadeUI {
                     break;
                 }
                 case 4:{
+
+                }
+                case 5:{
                     scan.close();
                     System.exit(0);
                 }
