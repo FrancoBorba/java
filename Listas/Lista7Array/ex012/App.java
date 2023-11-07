@@ -4,7 +4,7 @@ package Listas.Lista7Array.ex012;
 public class App {
     public static void main(String[] args) {
         InteiroSet conjuntoA = new InteiroSet();
-        InteiroSet conjuntoB = new InteiroSet();
+        //InteiroSet conjuntoB = new InteiroSet();
     
         System.out.println(conjuntoA);
 
