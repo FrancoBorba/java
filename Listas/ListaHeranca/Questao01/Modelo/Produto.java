@@ -5,9 +5,9 @@ public class Produto {
     private static int cont=0;
     private String nome;
     private double preco;
-    public Produto(int codigo , String nome , double preco ){
+    public Produto( String nome , double preco ){
         cont++;
-        this.codigo = codigo;
+        this.codigo = cont;
         this.nome = nome;
         this.preco = preco;
     }
