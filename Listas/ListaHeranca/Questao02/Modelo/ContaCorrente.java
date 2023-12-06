@@ -10,5 +10,8 @@ public class ContaCorrente extends Conta{
     public ContaCorrente(Cliente C , double Saldo){
         super(C, Saldo);
     }
+    public String getTipo(){
+        return "Conta corrente";
+    }
     
 }

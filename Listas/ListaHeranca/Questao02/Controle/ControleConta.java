@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import Listas.ListaHeranca.Questao02.Modelo.Cliente;
 import Listas.ListaHeranca.Questao02.Modelo.Conta;
+import Listas.ListaHeranca.Questao02.Modelo.ContaCorrente;
+import Listas.ListaHeranca.Questao02.Modelo.ContaPoupanca;
 
 public class ControleConta {
     private ArrayList<Conta> contas = new ArrayList<>();
@@ -16,8 +18,11 @@ public class ControleConta {
         }
     return null;
     }
-    public void cadastrarConta(Cliente c){
-       contas.add(new Conta(c));
+    public void cadastrarContaCorrente(Cliente c){
+       contas.add(new ContaCorrente(c));
+    }
+    public void cadastrarContaPoupanca(Cliente c){
+        contas.add(new ContaPoupanca(c));
     }
     public String mostrarHistorico(int num){
         Conta c = pesquisarConta(num);
@@ -42,4 +47,7 @@ public class ControleConta {
         Conta c = pesquisarConta(num);
         return c.consultarSaldo();
     }
+    //public int mostrarNumeroConta(Conta c){
+    //   return c.getNumeroConta();
+   //  }
 }

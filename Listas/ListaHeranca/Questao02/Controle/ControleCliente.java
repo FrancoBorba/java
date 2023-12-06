@@ -17,6 +17,9 @@ public class ControleCliente{
             break;
         }
         }
-return c;
-}
+        return c;
+    }
+    public String mostrarCliente( Cliente c){
+        return c.getNome() + " Cpf: " + c.getCPF();
+    }
 }

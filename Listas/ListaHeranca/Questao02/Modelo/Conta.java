@@ -2,7 +2,7 @@ package Listas.ListaHeranca.Questao02.Modelo;
 
 import java.util.ArrayList;
 
-public class Conta {
+public abstract class Conta {
     private int numeroConta;
     private double saldo;
     private ArrayList<String> historico;
@@ -42,15 +42,15 @@ public class Conta {
             this.saldo = saldo;
             }
         public void depositarSaldo(double deposito){
-            if(saldo > 0)
+            
             saldo = saldo + deposito;
             historico.add("Depositou: " + deposito);
         }
         public boolean sacarSaldo( double saque){
             
-            if((saldo >= saque) && (saque > 0) ){
+            if(saldo >= saque && saque > 0 ){
                 saldo = saldo - saque;
-                historico.add("Depositou R$ "+ saque);
+                historico.add("Sacou R$ "+ saque);
                 return true;
             }
         return false;
@@ -65,4 +65,7 @@ public class Conta {
             s = s + historico.get(i) + "\n";
             return s;
             }
+        public abstract String getTipo();
+        
+        
 }

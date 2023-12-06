@@ -10,4 +10,7 @@ public class ContaPoupanca extends Conta {
     public ContaPoupanca(Cliente C , double Saldo){
         super(C, Saldo);
     }
+    public String getTipo(){
+        return "Conta poupança";
+    }
 }
