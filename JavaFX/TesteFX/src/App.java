@@ -1,6 +1,8 @@
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
@@ -13,20 +15,14 @@ public class App extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Teste dessa merda");
-        Button botao = new Button("Clique aqui");
-        botao.setOnAction(new EventHandler<ActionEvent>() {
+       FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layout.fxml"));
+       Parent root = fxmlLoader.load();
+       Scene tela = new Scene(root);
 
-            @Override
-            public void handle(ActionEvent arg0) {
-             System.out.println("Clicou no botao");
-            }
-            
-        });
-        StackPane root = new StackPane();
-        root.getChildren().addAll(botao);
-        primaryStage.setScene(new Scene(root,300 ,250));
+        primaryStage.setTitle("TITUlO");
+        primaryStage.setScene(tela);
         primaryStage.show();
+       
     }
 }
 
