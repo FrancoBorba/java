@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
+// Aula focada em aprender sobre Stages em JavaFX
 public class App extends Application{
     public static void main(String[] args) throws Exception {
         launch(args); // necessario em todo codigo , esta chamando uma função abstrata de aplication
