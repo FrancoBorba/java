@@ -67,7 +67,7 @@ public class App extends Application {
         root.getChildren().add(linha);
         root.getChildren().add(rectangle);
         root.getChildren().add(circle);
-        root.getChildren().addAll(imageView);
+      //  root.getChildren().addAll(imageView); imagem tava mt grande 
         
 
        stage.setScene(scene); // adiciona a scene no stage que está sendo utilizado
