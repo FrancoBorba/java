@@ -9,7 +9,7 @@ public class ex002 {
         double maior = 0.0;
         double vet[]  = new double[tam];
         for( int i = 0 ; i < tam; i++){
-            vet[i] = new SecureRandom().nextDouble(100);
+            vet[i] = new SecureRandom().nextDouble();
         }
         for( int i = 0 ; i < tam ; i++){
             System.out.printf("%.1f - ",vet[i]);

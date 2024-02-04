@@ -10,7 +10,7 @@ public class ex003 {
         float media =0;
         float vet[] = new float[10];
         for( int i = 0; i< tam; i++){
-            vet[i] = new SecureRandom().nextFloat(100);
+            vet[i] = new SecureRandom().nextFloat();
         }
         for( int i =0 ; i < 10; i++){
             media = media + vet[i];
