@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Listas.ListaRelacaoDeClasses.Agenda.App",
+            "projectName": "java_6fcf4409"
+        },
+        {
+            "type": "java",
             "name": "ex002",
             "request": "launch",
             "mainClass": "Listas.Lista7Array.ex002",
