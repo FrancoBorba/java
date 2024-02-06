@@ -1,0 +1,12 @@
+.root{
+    -fx-background-color: blue;
+}
+.label{
+    -fx-font-size: 20px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+#titleLabel{
+    -fx-font-size: 45px;
+}
