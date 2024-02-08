@@ -19,7 +19,7 @@ public class Scene1Controller {
     private Parent root;
 
     public void login(ActionEvent e) throws IOException{
-        /* 
+         
         String username = nameTextFild.getText();
     
         FXMLLoader loader = new FXMLLoader(getClass().getResource("scene2.fxml"));
@@ -27,12 +27,15 @@ public class Scene1Controller {
 
         Scene2Controller scene2Controller = loader.getController();
         scene2Controller.displayName(username);
-*/
+        
 
-         root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
+
+        // root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
         // este codigo abaixo troca as linhas
+        
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().add(this.getClass().getResource("estilo.css").toExternalForm()); // deve se adicionar o css nas novas cenas
         stage.setScene(scene);
         stage.show();
     }
