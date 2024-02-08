@@ -15,13 +15,13 @@ public class App extends Application{
         Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
         Scene scene = new Scene(root);
 
-        //Image icon = new Image(getClass().getResourceAsStream("icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("icon.png"));
 
-        //String css = this.getClass().getResource("estilo.css").toExternalForm();
-       // scene.getStylesheets().add(css);
+        String css = this.getClass().getResource("estilo.css").toExternalForm();
+       scene.getStylesheets().add(css);
 
-        //primaryStage.setTitle("Aula sobre controles");
-       // primaryStage.getIcons().add(icon);
+        primaryStage.setTitle("Aula sobre controles");
+       primaryStage.getIcons().add(icon);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
