@@ -12,10 +12,16 @@ public class ControllerImage {
     private ImageView imageView;
     
     Image imagem1 = new Image(getClass().getResourceAsStream("/imagens/shrek2.jpg"));
+    Image imagem2 = new Image(getClass().getResourceAsStream("/imagens/shrek1.jpg"));
 
     public void displayImage(){
-        imageView.setImage(imagem1);
-    }
+        if(imageView.getImage()== imagem1){
+            imageView.setImage(imagem2);
+        }
+        else{
+            imageView.setImage(imagem1);
+        }
+}
 
 
     
