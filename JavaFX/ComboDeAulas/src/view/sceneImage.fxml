@@ -7,10 +7,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerImage">
    <children>
-      <Button fx:id="changeImageButton" layoutX="238.0" layoutY="314.0" mnemonicParsing="false" onAction="#displayImage" text="Change Image" />
+      <Button fx:id="changeImageButton" layoutX="116.0" layoutY="312.0" mnemonicParsing="false" onAction="#displayImage" text="Change Image" />
       <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="185.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagens/shrek1.jpg" />
          </image></ImageView>
+      <Button fx:id="switchSceneButton" layoutX="366.0" layoutY="312.0" mnemonicParsing="false" onAction="#switchScene" text="Avançar Scene" />
    </children>
 </AnchorPane>
