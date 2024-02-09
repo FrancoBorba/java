@@ -18,6 +18,7 @@ public class ControllerTextFild {
     private TextField textFild;
     @FXML
     private Button submitBotton;
+   
 
     int age;
     private Stage stage;
@@ -52,5 +53,13 @@ public class ControllerTextFild {
        stage.setScene(scene);
        stage.show();
     }
+    public void nextScene(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("/view/CheckBoxScene.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }
