@@ -26,7 +26,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="493.0" layoutY="340.0" mnemonicParsing="false" text="Next Scene" />
+      <Button layoutX="493.0" layoutY="340.0" mnemonicParsing="false" onAction="#nextScene" text="Next Scene" />
       <Button layoutX="35.0" layoutY="340.0" mnemonicParsing="false" onAction="#backScene" text="Back Scene" />
    </children>
 </AnchorPane>

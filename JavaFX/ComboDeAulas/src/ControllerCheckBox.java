@@ -40,14 +40,22 @@ public class ControllerCheckBox {
             imageView.setImage(imageoFF);
             myLabel.setText("OFF");
         }
+       
 
     }
      public void backScene(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("/view/sceneImage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/view/TextFildScene.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
        scene = new Scene(root);
        stage.setScene(scene);
        stage.show();
+    }
+    public void nextScene(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("/view/RadioButtonsScene.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
