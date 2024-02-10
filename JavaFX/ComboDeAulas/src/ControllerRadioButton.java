@@ -4,7 +4,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
+// Radio Buttons devem ser adicionados a um Toggle Group , assim não se pode marcar mais de uma vez
 public class ControllerRadioButton {
 
     @FXML
