@@ -35,6 +35,7 @@ public class ControllerTreeView implements Initializable {
     }
 
   
+    @SuppressWarnings("unchecked")
     @Override
     public void initialize(URL location, ResourceBundle resources) {
       TreeItem<String> rootItem = new TreeItem<>("Files");
