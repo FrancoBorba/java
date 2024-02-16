@@ -31,7 +31,7 @@ public class Controller implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        file = new File("CrazyFrog.mp4");
+        file = new File("C:\\Users\\Pichau\\Desktop\\CrazyFrog.mp4");
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
